@@ -62,7 +62,6 @@ public class EnemyController : MonoBehaviour
                 if(coolDownTimer ==0)
                 {
                     animator.SetBool("idle_combat", false);
-                   
                     EnemyAttack();
                     coolDownTimer = coolDown;
                 }

@@ -7,8 +7,8 @@ public class GoblinAttack : MonoBehaviour
 {
     // Start is called before the first frame update
     public GoblinController goblin;
-   
 
+    public Player_Dodge_Hit_Die script;
     public Animator animator;
     public float coolDown = 0.5f;
     public float coolDownTimer;
@@ -28,6 +28,7 @@ public class GoblinAttack : MonoBehaviour
         {
             coolDownTimer = 0;
         }
+
         if (Input.GetMouseButtonDown(0) && coolDownTimer == 0)
         {
             Attack1();
@@ -71,6 +72,17 @@ public class GoblinAttack : MonoBehaviour
     {
         float attack_range = Vector3.Distance(target.position, transform.position);
         animator.SetTrigger("Attack3");
+        if (attack_range <= agent.stoppingDistance)
+        {
+
+            goblin.TakeDamage();
+
+        }
+    }
+    void SkillAttack1()
+    {
+        float attack_range = Vector3.Distance(target.position, transform.position);
+        animator.SetTrigger("Skill1");
         if (attack_range <= agent.stoppingDistance)
         {
 

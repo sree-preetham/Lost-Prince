@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_Dodge_Hit_Die : MonoBehaviour
 {
     public int currentHealth;
-    public int maxHealth = 100;
+    public int maxHealth = 750;
     public HealthBar healthbar;
     public Animator m_Animator;
     public EnemyController m_Enemy;
@@ -35,6 +35,7 @@ public class Player_Dodge_Hit_Die : MonoBehaviour
         m_Animator.SetTrigger("Hit");
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
+     
        
         if(currentHealth<=0)
         {

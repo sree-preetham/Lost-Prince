@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1CB78440-A87D-2521-6517-1FCD867AC539}</ProjectGuid>
+    <ProjectGuid>{0BF94F41-FA4D-F928-53B8-76DEF91160E4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,6 +52,9 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.13f1</UnityVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="P:\Visual Studio\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
     <Compile Include="Assets\Wizard\Environment\Scripts\CamCTRLDemo.cs" />
@@ -659,51 +662,51 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Cinemachine.csproj">
-      <Project>{6B7AE62C-2EA5-0727-3034-8733483BDD8E}</Project>
+      <Project>{F5DC7492-DDB5-6B87-1D22-7B895DF6521D}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{6CFE4D5F-D370-55D4-A11F-86860020AFCB}</Project>
+      <Project>{45E59217-79C7-D98D-D23D-D655AE802D99}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{16960964-0CC2-6F42-6CAC-16325F0066E9}</Project>
+      <Project>{F405D2FE-C502-2866-77D4-5A26866C760C}</Project>
       <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{9D97363B-7A8C-D160-6BC3-D9BD8F7E0946}</Project>
+      <Project>{FE735804-2A17-381F-0EF2-F067C9D37D65}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{00B53255-9729-F167-4E8A-C1F755CDF953}</Project>
+      <Project>{3638F067-8342-0F9A-D580-0A7568B58772}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{18111C68-7811-9302-A402-1C59D601C221}</Project>
+      <Project>{C5A095BE-8BAD-3153-4579-475533AFDE2B}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{86AC2A0A-4F96-E5CA-6D94-048B5FD9A4AB}</Project>
+      <Project>{822CE9F4-50C8-6981-31AC-94F4D208B44C}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{27A4CDA0-A7DE-0ECE-3751-B5F123FBF737}</Project>
+      <Project>{D6F5FABB-99FE-FE80-95C5-AC0C10249FEF}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{23B29DFC-D972-1309-3FB7-5F19069F7FDB}</Project>
+      <Project>{15B50EEA-7374-18F4-513B-577E23889113}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{75A09191-8125-760F-9F8F-C14CD0EB8355}</Project>
+      <Project>{7A507B16-4E8E-B91B-C15A-25EAB21A7A86}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{54CCA79B-8495-1079-90B3-CC66E12B59D3}</Project>
+      <Project>{476F2CE8-4BED-1939-F4C8-DF7CF4BA32AA}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{E0B7AED5-C11E-C8E3-3043-0D2AA4500F38}</Project>
+      <Project>{9559A47A-34AA-EF7C-8F9F-4952924DA797}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

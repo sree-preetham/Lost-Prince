@@ -47,7 +47,6 @@ public class TrollAttack : MonoBehaviour
        
         float attack_range = Vector3.Distance(target.position, transform.position);
         animator.SetTrigger("Attack1");
-        audioClip.Play();
         if (attack_range <= agent.stoppingDistance)
         {
 
